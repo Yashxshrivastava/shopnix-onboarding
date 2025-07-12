@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/shopnix-onboarding/static/css/main.bdd7e59a.css",
-    "main.js": "/shopnix-onboarding/static/js/main.e9b2f68a.js",
+    "main.js": "/shopnix-onboarding/static/js/main.3e7ce5de.js",
     "index.html": "/shopnix-onboarding/index.html",
     "main.bdd7e59a.css.map": "/shopnix-onboarding/static/css/main.bdd7e59a.css.map",
-    "main.e9b2f68a.js.map": "/shopnix-onboarding/static/js/main.e9b2f68a.js.map"
+    "main.3e7ce5de.js.map": "/shopnix-onboarding/static/js/main.3e7ce5de.js.map"
   },
   "entrypoints": [
     "static/css/main.bdd7e59a.css",
-    "static/js/main.e9b2f68a.js"
+    "static/js/main.3e7ce5de.js"
   ]
 }
