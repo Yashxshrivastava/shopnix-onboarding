@@ -1,0 +1,265 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h4, h5 {
+  font-weight: 600;
+}
+
+/* Theme Cards */
+.theme-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.theme-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  filter: blur(0.5px);
+}
+
+.theme-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.theme-card.selected {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.theme-card button {
+  width: 120px;
+  margin-top: 10px;
+  align-self: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.theme-card button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+  color: white;
+}
+
+.theme-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.theme-card p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Category Form Box */
+.category-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+}
+
+/* Flow Chart */
+.flow-box {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.flow-arrow {
+  font-size: 24px;
+  color: #555;
+}
+
+/* Responsive flow layout */
+.flow-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .flow-layout {
+    flex-direction: column !important;
+  }
+  .flow-layout .flow-arrow {
+    transform: rotate(90deg);
+    margin: 0.5rem 0;
+  }
+}
+
+/* Scroll Form */
+.scroll-form {
+  height: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 1rem;
+  border-right: 1px solid #eee;
+  scrollbar-width: auto;
+  scrollbar-color: #ccc transparent;
+}
+
+.scroll-form::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-form::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.scroll-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Preview Card */
+.preview-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: auto;
+  scrollbar-color: #ccc transparent;
+  margin-top: 1rem;
+}
+
+.preview-card::-webkit-scrollbar {
+  width: 8px;
+}
+
+.preview-card::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.preview-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.preview-card .image-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.preview-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Popup Notification */
+.popup-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popup-check {
+  font-size: 2rem;
+  color: green;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* General Mobile Tweaks */
+@media (max-width: 767px) {
+  .theme-card {
+    min-height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .theme-card img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .theme-card button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .preview-card,
+  .category-box {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .scroll-form {
+    border-right: none;
+    padding-right: 0;
+    max-height: 400px;
+  }
+
+  .flow-box {
+    min-width: 120px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .flow-arrow {
+    font-size: 18px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
